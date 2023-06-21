@@ -1,6 +1,6 @@
 
 // Classe pessoa, com suas caracteristicas e métodos acessores.
-public class Pessoa {
+public class Pessoa 
 
 	private String nome;
 	
