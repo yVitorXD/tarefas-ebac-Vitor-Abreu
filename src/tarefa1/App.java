@@ -11,33 +11,41 @@ public class App {
 		
 		System.out.println("Tarefa 1 - Ebac\n");
 		
-		Pessoa a = new Pessoa("Vitor", "M");
-		Pessoa b = new Pessoa("Wendy", "F");
-		Pessoa c = new Pessoa("Luana", "F");
-		Pessoa d = new Pessoa("Vinicius", "M");
+		Scanner sc = new Scanner(System.in);
 		
 		List<Pessoa> lista = new ArrayList<Pessoa>();
 		
-		lista.add(a);
-		lista.add(b);
-		lista.add(c);
-		lista.add(d);
+		System.out.println("Digite os nomes das pessoas separados por virgula");
+		String entrada = sc.nextLine();		
+		
+		String[] nomes = entrada.split(",");
+		
+		for (String nome : nomes) {
+			nome = nome.trim();
+			Pessoa pessoa = new Pessoa(nome, "");
+			lista.add(pessoa);
+			
+		}
 		
 		Collections.sort(lista);
-		System.out.println(lista);
 		
-		System.out.println();
-		System.out.println("Tarefa 2 - Ebac");
-		System.out.println();
+		System.out.println("Nome das pessoas");
 		
-		//obs: comando split
-		//2 parte
-		//ler do console nome - sexo (m/f), separar por grupos, por generos
-		//imprimir no console com os grupos separados
+		for (Pessoa pessoa : lista) {
+			System.out.println(pessoa.getNome());
+		}
+
 		
-		
+		sc.close();
             
-        
+		System.out.println("=========================");
+		System.out.println();
+		
+		
+		
+		
+		
+		
 		
 	}
 	
