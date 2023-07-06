@@ -30,7 +30,7 @@ public class App {
 			System.out.println("Nome: " + pessoa2.nome + " \nIdade: " + pessoa2.idade + " \nSexo: " + pessoa2.sexo + " \nCNPJ: " + pessoa2.getCpnj() + " \nEndereço" + pessoa2.getEnderenco());
 		}
 		
-		
+		//fim
 		
 		
 		
