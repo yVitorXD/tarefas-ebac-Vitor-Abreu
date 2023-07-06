@@ -29,5 +29,5 @@ public class PessoaJuridica extends Pessoa {
 	}
 	
 	//fim
-	
+	//fim
 }
