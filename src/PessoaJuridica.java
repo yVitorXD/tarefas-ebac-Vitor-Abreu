@@ -28,6 +28,6 @@ public class PessoaJuridica extends Pessoa {
 		this.enderenco = enderenco;
 	}
 	
-	
+	//fim
 	
 }
